@@ -2,31 +2,31 @@
 
 /* ------------------------------------------------------------------
    Looxmaxxing design tokens.
-   Warm ink on warm paper, salon brass as the accent, sage for "good".
+   Ink on HN-cream paper, startup orange as the accent, sage for "good".
    Light palette is defined here in full; the two dark blocks below
    redefine only the values, so every component stays theme-agnostic.
 ------------------------------------------------------------------- */
 :root {
-  --paper: #f6f4ef;
+  --paper: #f6f6ef;
   --surface: #ffffff;
-  --surface-2: #efece4;
-  --surface-3: #e7e2d7;
-  --line: #dfd9cd;
-  --line-soft: #e8e3d9;
-  --ink: #1c1a17;
-  --ink-2: #4a443c;
-  --muted: #776f63;
-  --faint: #a2998b;
-  --brass: #9a6e1e;
-  --brass-ink: #7a5614;
-  --brass-bright: #b5822b;
-  --brass-wash: #f3e9d4;
+  --surface-2: #efefe6;
+  --surface-3: #e4e4d8;
+  --line: #dcdccf;
+  --line-soft: #e8e8dc;
+  --ink: #1a1a1a;
+  --ink-2: #444444;
+  --muted: #6b6b63;
+  --faint: #9a9a8f;
+  --brass: #f26522;
+  --brass-ink: #c4470d;
+  --brass-bright: #ff7a3a;
+  --brass-wash: #fdebe0;
   --sage: #4e6a57;
   --sage-wash: #e5ebe4;
   --clay: #9c4b2e;
   --clay-wash: #f6e5de;
-  --on-brass: #fdfbf7;
-  --ring: #9a6e1e;
+  --on-brass: #ffffff;
+  --ring: #f26522;
   --shadow-sm: 0 1px 2px rgba(28, 26, 23, 0.06);
   --shadow: 0 1px 2px rgba(28, 26, 23, 0.05), 0 8px 24px -16px rgba(28, 26, 23, 0.35);
   --shadow-lg: 0 2px 4px rgba(28, 26, 23, 0.05), 0 24px 48px -24px rgba(28, 26, 23, 0.4);
@@ -34,26 +34,26 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --paper: #141210;
-    --surface: #1e1b17;
-    --surface-2: #262219;
-    --surface-3: #2f2a20;
-    --line: #37312a;
-    --line-soft: #2b261f;
-    --ink: #efe9de;
-    --ink-2: #cfc7b9;
-    --muted: #9b9081;
-    --faint: #7a7164;
-    --brass: #d8a44c;
-    --brass-ink: #e8bc6e;
-    --brass-bright: #e8bc6e;
-    --brass-wash: #2e2416;
+    --paper: #111111;
+    --surface: #1a1a1a;
+    --surface-2: #222222;
+    --surface-3: #2c2c2c;
+    --line: #333333;
+    --line-soft: #292929;
+    --ink: #f2f2ee;
+    --ink-2: #d0d0c8;
+    --muted: #9a9a92;
+    --faint: #75756d;
+    --brass: #ff7a3a;
+    --brass-ink: #ff9460;
+    --brass-bright: #ff9460;
+    --brass-wash: #2e1d12;
     --sage: #93b29b;
     --sage-wash: #1d2620;
     --clay: #d98868;
     --clay-wash: #2e1c15;
-    --on-brass: #1a1509;
-    --ring: #d8a44c;
+    --on-brass: #ffffff;
+    --ring: #ff7a3a;
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px -16px rgba(0, 0, 0, 0.8);
     --shadow-lg: 0 2px 4px rgba(0, 0, 0, 0.5), 0 24px 48px -24px rgba(0, 0, 0, 0.9);
@@ -61,26 +61,26 @@
 }
 
 :root[data-theme="dark"] {
-  --paper: #141210;
-  --surface: #1e1b17;
-  --surface-2: #262219;
-  --surface-3: #2f2a20;
-  --line: #37312a;
-  --line-soft: #2b261f;
-  --ink: #efe9de;
-  --ink-2: #cfc7b9;
-  --muted: #9b9081;
-  --faint: #7a7164;
-  --brass: #d8a44c;
-  --brass-ink: #e8bc6e;
-  --brass-bright: #e8bc6e;
-  --brass-wash: #2e2416;
+  --paper: #111111;
+  --surface: #1a1a1a;
+  --surface-2: #222222;
+  --surface-3: #2c2c2c;
+  --line: #333333;
+  --line-soft: #292929;
+  --ink: #f2f2ee;
+  --ink-2: #d0d0c8;
+  --muted: #9a9a92;
+  --faint: #75756d;
+  --brass: #ff7a3a;
+  --brass-ink: #ff9460;
+  --brass-bright: #ff9460;
+  --brass-wash: #2e1d12;
   --sage: #93b29b;
   --sage-wash: #1d2620;
   --clay: #d98868;
   --clay-wash: #2e1c15;
-  --on-brass: #1a1509;
-  --ring: #d8a44c;
+  --on-brass: #ffffff;
+  --ring: #ff7a3a;
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px -16px rgba(0, 0, 0, 0.8);
   --shadow-lg: 0 2px 4px rgba(0, 0, 0, 0.5), 0 24px 48px -24px rgba(0, 0, 0, 0.9);
@@ -107,8 +107,8 @@
   --color-clay-wash: var(--clay-wash);
   --color-on-brass: var(--on-brass);
 
-  --font-display: var(--font-bodoni), "Didot", Georgia, serif;
-  --font-sans: var(--font-instrument), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-plex-mono), ui-monospace, monospace;
 
   --shadow-card: var(--shadow);
@@ -127,7 +127,7 @@ html {
 body {
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--font-instrument), ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -147,14 +147,15 @@ body {
 
 /* --- shared type utilities ------------------------------------- */
 .font-display {
-  font-family: var(--font-bodoni), "Didot", Georgia, serif;
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: -0.025em;
 }
 .eyebrow {
   font-family: var(--font-plex-mono), ui-monospace, monospace;
   font-size: 11px;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--brass-ink);
 }
 .tnum {
   font-variant-numeric: tabular-nums;

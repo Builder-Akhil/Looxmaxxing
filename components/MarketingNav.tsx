@@ -4,7 +4,7 @@ import { ButtonLink } from "./ui";
 
 export function MarketingNav({ signedIn = false }: { signedIn?: boolean }) {
   return (
-    <header className="sticky top-0 z-40 border-b border-line bg-paper/85 backdrop-blur-md">
+    <header className="sticky top-0 z-40 border-b border-t-[3px] border-line border-t-brass bg-paper/90 backdrop-blur-md">
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between gap-6 px-6">
         <Logo />
         <nav className="hidden items-center gap-7 text-[14.5px] text-ink-2 sm:flex">
