@@ -26,7 +26,7 @@ export function Footer() {
           <span>
             © {new Date().getFullYear()} {brand.name}
           </span>
-          <span>Styling guidance, not medical advice · India &amp; UK</span>
+          <span>Styling guidance, not medical advice · Delete your data anytime</span>
         </div>
       </div>
     </footer>
