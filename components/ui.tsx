@@ -5,11 +5,11 @@ import type { ComponentProps, ReactNode } from "react";
 /* ---------------------------------------------------------------- buttons */
 
 const BASE =
-  "inline-flex items-center justify-center gap-2 font-medium transition-colors " +
+  "inline-flex items-center justify-center gap-2 font-semibold transition-colors " +
   "disabled:opacity-45 disabled:pointer-events-none select-none";
 
 const VARIANTS = {
-  primary: "bg-ink text-paper hover:bg-brass hover:text-on-brass",
+  primary: "bg-brass text-on-brass hover:bg-brass-bright",
   brass: "bg-brass text-on-brass hover:bg-brass-bright",
   outline: "border border-line bg-surface text-ink hover:border-brass hover:text-brass-ink",
   ghost: "text-ink-2 hover:text-brass-ink hover:bg-brass-wash",
@@ -17,9 +17,9 @@ const VARIANTS = {
 } as const;
 
 const SIZES = {
-  sm: "h-8 px-3 text-[13px] rounded-sm",
-  md: "h-10 px-5 text-[14.5px] rounded-sm",
-  lg: "h-12 px-7 text-[15.5px] rounded-sm",
+  sm: "h-8 px-3 text-[13px] rounded-[3px]",
+  md: "h-10 px-5 text-[14.5px] rounded-[3px]",
+  lg: "h-12 px-7 text-[15.5px] rounded-[3px]",
 } as const;
 
 type ButtonStyle = { variant?: keyof typeof VARIANTS; size?: keyof typeof SIZES };
@@ -109,7 +109,7 @@ export function Badge({
   return (
     <span
       className={clsx(
-        "inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 font-mono text-[10.5px] uppercase tracking-[0.09em]",
+        "inline-flex items-center gap-1.5 rounded-[3px] border px-2 py-0.5 font-mono text-[10.5px] uppercase tracking-[0.09em]",
         TONES[tone],
         className,
       )}
@@ -174,7 +174,7 @@ export function Input({ className, ...props }: ComponentProps<"input">) {
   return (
     <input
       className={clsx(
-        "h-11 w-full rounded-sm border border-line bg-surface px-3.5 text-[15px] text-ink",
+        "h-11 w-full rounded-[3px] border border-line bg-surface px-3.5 text-[15px] text-ink",
         "placeholder:text-faint focus:border-brass focus:outline-none",
         className,
       )}

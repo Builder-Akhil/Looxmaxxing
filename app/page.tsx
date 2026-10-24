@@ -19,8 +19,8 @@ export default async function LandingPage() {
       <section className="border-b border-line">
         <div className="mx-auto grid w-full max-w-6xl gap-14 px-6 py-16 md:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div>
-            <Badge tone="brass">Hair · Beard · Colour</Badge>
-            <h1 className="mt-6 font-display text-[clamp(38px,6.4vw,68px)] font-bold leading-[0.98] tracking-[-0.018em] balance">
+            <Badge tone="brass">Hair · Beard · Colour — now in beta</Badge>
+            <h1 className="mt-6 font-display text-[clamp(38px,6.4vw,68px)] font-bold leading-[1.0] tracking-[-0.04em] balance">
               Nobody can describe the haircut they want.
             </h1>
             <p className="mt-6 max-w-[46ch] text-[18px] leading-relaxed text-ink-2">
@@ -98,8 +98,25 @@ export default async function LandingPage() {
         </div>
       </section>
 
+      {/* ---------------------------------------------------- stats strip */}
+      <section className="border-b border-line bg-surface">
+        <dl className="mx-auto grid w-full max-w-6xl grid-cols-2 divide-x divide-line px-6 md:grid-cols-4">
+          {[
+            ["20s", "to read your face"],
+            ["9", "questions, no essays"],
+            ["2", "free readings a month"],
+            ["EN + HI", "barber card languages"],
+          ].map(([n, l]) => (
+            <div key={l} className="px-5 py-6 first:pl-0">
+              <dt className="font-display text-[30px] font-bold leading-none tracking-[-0.04em] text-brass">{n}</dt>
+              <dd className="mt-2 font-mono text-[11px] uppercase tracking-[0.1em] text-muted">{l}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
+
       {/* ---------------------------------------------------- the barber card */}
-      <section className="border-b border-line bg-surface-2/40">
+      <section className="border-b border-line bg-surface-2/60">
         <div className="mx-auto grid w-full max-w-6xl gap-12 px-6 py-16 md:py-20 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div>
             <p className="eyebrow">The part nobody else does</p>

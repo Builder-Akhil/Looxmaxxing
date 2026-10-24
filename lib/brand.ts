@@ -5,7 +5,7 @@
 export const brand = {
   name: "Looxmaxxing",
   shortName: "Loox",
-  tagline: "It reads your face, learns your taste, and tells your barber exactly what to do.",
+  tagline: "Your face, your taste, your barber — finally on the same page.",
   description:
     "AI grooming and styling for your face. Get a hairstyle, beard and colour palette that actually suit you — plus a card your barber can follow.",
   domain: "looxmaxxing.com",
